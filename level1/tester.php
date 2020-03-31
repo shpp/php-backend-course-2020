@@ -114,13 +114,13 @@ Content-Length: 2
 T3
 ,
 	4 => <<<T4
-POST /api/checkLoginAndPassword HTTP/1.1
-Accept: */*
-Content-Type: application/x-www-form-urlencoded
-User-Agent: Mozilla/4.0
-Content-Length: 35
+HTTP/1.1 200 OK
+Server: Apache/2.2.14 (Win32)
+Content-Length: 34
+Connection: Closed
+Content-Type: text/html; charset=utf-8
 
-login=student&password=12345
+<h1 style="color:green">FOUND</h1>
 T4
 ,
 	5 => <<<T5
